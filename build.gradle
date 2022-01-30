@@ -4,6 +4,10 @@ plugins {
 	id 'java'
 }
 
+task stage () {
+    dependsOn ':EventRegistration-Backend:assemble'
+}
+
 group = 'mcgill.ecse321'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '17'
